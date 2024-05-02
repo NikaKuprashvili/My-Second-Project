@@ -60,7 +60,7 @@ nav ul {
 }
 
 .container {
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -355,7 +355,7 @@ nav ul {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .text-div5 p {
@@ -366,7 +366,124 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 30px;
 }
 .contpadding6 {
   padding-top: 200px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 38.375rem;
+  background-color: rgba(29, 114, 147, 0.1);
+  padding: 20px;
+  margin: 15px;
+  border-radius: 0px 30px;
+}
+
+.flex-textbox h2 {
+  color: #073141;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 15px;
+}
+
+.flex-textbox p {
+  color: #073141;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text-div6 {
+  color: #1d7293;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+}
+
+.contpadding7 {
+  padding-top: 50px;
+}
+
+.text-div7 {
+  color: #1d7293;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+}
+
+.contpadding8 {
+  padding-top: 50px;
+}
+
+.text-div8 h2 {
+  color: #1d7293;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.text-div8 p {
+  color: #073141;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contpadding9 {
+  padding-top: 200px;
+}
+
+.flex-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-child2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 39rem;
+  border-radius: 0rem 1.875rem;
+  background: rgba(29, 114, 147, 0.1);
+  padding: 20px;
+  margin: 15px;
+}
+
+.flex-child2 img {
+  width: 200px;
 }

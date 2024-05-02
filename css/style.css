@@ -487,3 +487,70 @@ nav ul {
 .flex-child2 img {
   width: 200px;
 }
+
+.text-div9 h2 {
+  color: #1d7293;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.text-div9 p {
+  color: #073141;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contpadding10 {
+  padding-top: 250px;
+}
+
+.flexbox-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox-child {
+  padding: 0px 40px;
+}
+
+.contpadding11 {
+  padding-top: 40px;
+}
+
+.contpadding12 {
+  padding-top: 200px;
+}
+
+.text-div10 h2 {
+  color: #1d7293;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+}
+
+.text-div10 p {
+  color: #073141;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

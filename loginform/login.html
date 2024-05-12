@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <form id="login" action="" method="post">
+          <div class="form-div">
+            <label for="userfield">Username</label>
+            <input type="text" name="username" id="userfield" />
+            <p class="error-text" id="error-username"></p>
+          </div>
+          <div class="form-div">
+            <label for="passwfield">Password</label>
+            <i id="eyeicon" class="fa-solid fa-eye-slash"></i>
+            <input type="password" name="passw" id="passwfield" />
+            <p class="error-text" id="error-passw"></p>
+          </div>
+          <div class="form-div">
+            <label for="passw2field">Repeat Password</label>
+            <i id="eyeicon2" class="fa-solid fa-eye-slash"></i>
+            <input type="password" name="passw2" id="passw2field" />
+            <p class="error-text" id="error-passw2"></p>
+          </div>
+          <div class="radio-div">
+            <input
+              type="radio"
+              name="gender"
+              id="malegender"
+              class="radio-gender"
+            />
+            <label for="malegender">Male</label>
+            <input
+              type="radio"
+              name="gender"
+              id="femalegender"
+              class="radio-gender"
+            />
+            <label for="femalegender">Female</label>
+            <p class="error-text" id="error-gender"></p>
+          </div>
+          <div class="checkbox-div">
+            <input type="checkbox" name="agree" id="checkagree" />
+            <label for="checkagree">I agree terms and conditions</label>
+            <p class="error-text" id="error-agree"></p>
+          </div>
+          <div class="form-btn">
+            <button type="submit">რეგისტრაცია</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script src="login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "my-second-project",
+  "version": "1.0.0",
+  "description": "This is my second project built with html, css, javacript and some javascript libraries",
+  "main": "js/script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "swiper": "^11.1.1"
+  }
+}

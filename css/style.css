@@ -1,6 +1,11 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 150px;
+}
 body {
   background-color: #f6fdff;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -17,12 +22,14 @@ header nav ul li a {
   line-height: normal;
   transition: all 0.1s;
 }
-
+.log_in_a {
+  color: white;
+}
 header nav ul li a:hover {
   font-weight: bold;
 }
 
-header button,
+.log_in,
 .text-btn-div button {
   width: 192px;
   height: 45px;
@@ -40,23 +47,50 @@ header button,
   line-height: normal;
   cursor: pointer;
   transition: all 0.3s;
+  margin-right: 30px;
 }
 
-header button:hover,
+.log_in {
+  width: 152px;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.log_in:hover,
 .text-btn-div button:first-child:hover {
   background-color: #f6fdff;
   color: #1d7293;
 }
 
-.nav-div {
-  margin: 20px 0px 25px 0px;
+.nav-bar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
 }
-nav ul {
+
+.nav-bar img {
+  margin-left: 50px;
+}
+
+.nav-ul {
   display: flex;
-  column-gap: 60px;
+  align-items: center;
+}
+
+header nav ul li {
+  padding-left: 40px;
+}
+
+.burger-bar {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 35px;
+  display: none;
 }
 
 .container {
@@ -68,7 +102,10 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+
+.contpadding18 {
+  padding: 150px 0;
 }
 
 .text-div1 h1 {
@@ -87,7 +124,7 @@ nav ul {
   box-shadow: 0px 0px 0px 1.92px #ccdee6, 0px 0px 0px 0.92px #fff,
     0px 1.92px 0px 0px rgba(255, 255, 255, 0.2) inset,
     0px 0px 0px 1.92px rgba(255, 255, 255, 0.2) inset;
-  margin-left: 30px;
+  margin-left: 10px;
 }
 
 .text-btn-div button:last-child:hover {
@@ -124,12 +161,18 @@ nav ul {
 
 .img-div2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
 .child {
   padding: 50px 100px 0px 80px;
+}
+
+.child img {
+  min-width: 0;
+  max-width: 100%;
+  object-fit: cover;
 }
 .text-div3 {
   text-align: center;
@@ -167,6 +210,7 @@ nav ul {
 
 .artwork-images {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -234,7 +278,6 @@ nav ul {
   padding-top: 40px;
 }
 .content {
-  width: 1300px;
   height: auto;
   border-radius: 0px 30px;
   background-color: rgba(29, 114, 147, 0.1);
@@ -279,7 +322,6 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
-
 .col-box {
   padding: 0px 20px;
 }
@@ -374,12 +416,14 @@ nav ul {
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .flex-child {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   width: 38.375rem;
@@ -469,12 +513,14 @@ nav ul {
 
 .flex-container2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
 .flex-child2 {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 39rem;
@@ -488,6 +534,199 @@ nav ul {
   width: 200px;
 }
 
+.container1 {
+  max-width: 1920px;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.slide-container {
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 8px;
+  --bs-card-border-color: none;
+}
+
+.card .image-box {
+  height: 426px;
+  position: relative;
+}
+
+.image-box svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.swiper-navBtn {
+  position: relative;
+  cursor: pointer;
+}
+
+.imagesliderleftarrow,
+.imagesliderrightarrow {
+  z-index: 1;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+}
+
+.imagesliderleftarrow {
+  bottom: 200px;
+  left: 10px;
+}
+
+.imagesliderrightarrow {
+  bottom: 200px;
+  right: 10px;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 18px;
+}
+.card-wrapper {
+  position: relative;
+}
+.swiper-navBtn {
+  position: relative;
+  z-index: 4;
+}
+
+.contpadding15 {
+  padding-top: 150px;
+  padding-bottom: 30px;
+}
+
+.contpadding15 h2,
+.contpadding16 h2,
+.contpadding17 h2 {
+  color: #1d7293;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.225rem;
+  text-transform: uppercase;
+}
+
+.contpadding16 {
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.accordion-container h2 {
+  color: #073141;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: relative;
+}
+
+.accordion-container h2::before {
+  content: "+";
+  font-size: 2.3rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  transition: all 2s;
+}
+
+.accordion-container.active h2::before {
+  content: "-";
+}
+
+.accordion-container p {
+  color: #073141;
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.accordion-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-container {
+  max-width: 800px;
+  width: 100%;
+  border: 2px solid #073141;
+  padding: 18px;
+  margin-bottom: 20px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.accordion-container.active p {
+  margin-top: 20px;
+  height: auto;
+}
+
+.contpadding17 {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.filter-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-wrapper input {
+  max-width: 400px;
+  width: 100%;
+  padding: 10px;
+  border-color: #1d7293;
+  border-radius: 9px;
+  font-size: 18px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.ul-item li {
+  color: #1d7293;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.ul-item li.active {
+  display: none;
+}
+
+.ul-item li {
+  display: list-item;
+}
 .text-div9 h2 {
   color: #1d7293;
   text-align: center;
@@ -517,8 +756,15 @@ nav ul {
 
 .flexbox-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+.flexbox-child img {
+  min-width: 0;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 .flexbox-child {
@@ -543,6 +789,7 @@ nav ul {
   line-height: normal;
   letter-spacing: 0.225rem;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .text-div10 p {
@@ -570,7 +817,7 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   line-height: 1.25rem;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .footer-main-li {
@@ -579,10 +826,94 @@ nav ul {
   font-style: normal !important;
   font-weight: 500 !important;
   line-height: 1.375rem !important;
-  margin-bottom: 10px !important;
+  margin-bottom: 15px !important;
 }
 
 .footer-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  font-size: 30px;
+  z-index: 5;
+  cursor: pointer;
+  background-color: #325168;
+  padding: 20px;
+  border-radius: 50%;
+}
+
+#consentBox {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 6;
+}
+
+#consentBox.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+::selection {
+  color: #fff;
+  background: #325168;
+}
+
+#consentContent p {
+  color: #858585;
+  margin: 10px 0 20px 0;
+}
+
+#consentContent .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.consentButton,
+.rejectButton {
+  padding: 12px 27px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.consentButton {
+  background: #325168;
+  margin-right: 10px;
+}
+
+.rejectButton {
+  color: #111211;
+  background: transparent;
+  border: 2px solid #325168;
+  text-decoration: none;
+}
+
+#consentBox img {
+  max-width: 90px;
+}
+
+#consentHeader {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
 }

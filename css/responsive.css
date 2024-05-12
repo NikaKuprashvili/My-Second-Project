@@ -1,0 +1,151 @@
+@media (max-width: 877px) {
+  .burger-bar {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+  .nav-bar {
+    display: block;
+  }
+
+  .nav-ul {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .navigation.activenav {
+    display: block;
+    margin-top: 10px;
+  }
+
+  header nav ul li {
+    padding: 10px 0px 20px 0px;
+  }
+}
+
+@media (max-width: 1285px) {
+  .img-div1 img {
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .text-div1 h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 1195px) {
+  .text-div1 h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .box1 {
+    flex-direction: column;
+  }
+
+  .img-div1 {
+    margin-top: 45px;
+  }
+  .nav-bar img {
+    margin-left: 0;
+  }
+
+  .contpadding18 {
+    padding-top: 200px;
+  }
+}
+
+@media (max-width: 505px) {
+  .text-div1 h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .text-btn-div button {
+    width: 150px;
+  }
+
+  .text-btn-div button:first-child {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 404px) {
+  .text-div1 h1 {
+    font-size: 30px;
+  }
+  .text-btn-div button:first-child {
+    margin-left: 10px;
+  }
+
+  .text-btn-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+}
+
+@media (max-width: 336px) {
+  .text-div1 h1 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 980px) {
+  .text-div2 p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .artwork-image {
+    padding: 0px 10px 20px 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .artwork-image > img {
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1270px) {
+  .col-2 {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px) {
+  .col-box img {
+    min-width: 0;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  .col-1 {
+    flex-direction: column;
+  }
+
+  .logos {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 877px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

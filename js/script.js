@@ -2,46 +2,6 @@
 
 import { scrollToTop } from "./scroll.js";
 
-let swiper = new Swiper(".slide-container", {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  sliderPerGroup: 4,
-  loop: true,
-  centerSlide: "true",
-  fade: "true",
-  grabCursor: "true",
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".imagesliderrightarrow",
-    prevEl: ".imagesliderleftarrow",
-  },
-
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    500: {
-      slidesPerView: 2,
-    },
-    800: {
-      slidesPerView: 3,
-    },
-    1200: {
-      slidesPerView: 4,
-    },
-    1500: {
-      slidesPerView: 5,
-    },
-    1920: {
-      slidesPerView: 6,
-    },
-  },
-});
-
 const accordionDiv = document.querySelectorAll(".accordion-container");
 
 accordionDiv.forEach((el) => {
@@ -137,4 +97,44 @@ checkCookie !== -1
   ? consentBox.classList.add("hide")
   : consentBox.classList.remove("hide");
 
+  
 
+let swiper = new Swiper(".slide-container", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  sliderPerGroup: 4,
+  loop: true,
+  centerSlide: "true",
+  fade: "true",
+  grabCursor: "true",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".imagesliderrightarrow",
+    prevEl: ".imagesliderleftarrow",
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    500: {
+      slidesPerView: 2,
+    },
+    800: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+    1500: {
+      slidesPerView: 5,
+    },
+    1920: {
+      slidesPerView: 6,
+    },
+  },
+});

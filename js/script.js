@@ -56,11 +56,11 @@ let navbar = document.getElementById("navbar");
 let burger = document.getElementById("burgerbar");
 burger.addEventListener("click", () => {
   navbar.classList.toggle("activenav");
-  if (navbar.classList.contains("activenav")) {
-    navbar.style.maxHeight = navbar.scrollHeight + "px";
-  } else {
-    navbar.style.maxHeight = 0;
-  }
+  // if (navbar.classList.contains("activenav")) {
+  //   navbar.style.maxHeight = navbar.scrollHeight + "px";
+  // } else {
+  //   navbar.style.maxHeight = 0;
+  // }
 });
 
 let hamburger = document.querySelector(".hamburger");
